@@ -1,2 +1,2 @@
 # FCC-Projects
-My FreeCodeCamp Projects on Responsive Web Design
+FreeCodeCamp Projects for their Responsive Web Design certification.
