@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Title and description of the content.-->
+    <header>
+      <h1 id="title" class="center-text">Survey Form</h1>
+      <p id="description" class="center-text">Thank you for taking the time to help us get to know you better</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <!-- Creates field for user to enter their name.-->
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" name="name" id="name" class="name-input" placeholder="Enter your Name" required></input>
+        </div>
+        <!-- Creates text field for user to enter their email address.-->
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" id="email" class="email-input" placeholder="Enter your Email"
+            required></input>
+        </div>
+        <!-- Creates field for user to enter their age.-->
+        <div class="form-group">
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" name="number" id="number" class="number-input" placeholder="Age" min="13"
+            max="99"></input>
+        </div>
+        <!-- Creates a dropdown menu with listed items for the user to select.-->
+        <div class="form-group">
+          <p>What best describes your mood right now?</p>
+          <select type="dropdown" name="dropdown" id="dropdown" class="dropdown-input">
+            <option disabled selected value>Select current mood</option>
+            <option value="happy">Happy</option>
+            <option value="bored">Bored</option>
+            <option value="tired">Tired</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- Creates four radio buttons for the user to choose from.-->
+        <div class="form-group">
+          <p id="radio-q">What is your gender?</p>
+          <label class="radio-label">
+            <input name="user-gender" value="non-binary" type="radio" class="input-radio">Non-binary
+          </label>
+          <label class="radio-label">
+            <input name="user-gender" value="male" type="radio" class="input-radio">Male
+          </label>
+          <label class="radio-label">
+            <input name="user-gender" value="female" type="radio" class="input-radio">Female
+          </label class="radio-label">
+          <label class="radio-label">
+            <input name="user-gender" value="prefer-not-to-say" type="radio" class="input-radio">Prefer not to say
+          </label>
+        </div>
+        <div class="form-group">
+          <!-- Users can select all of the checkboxes created that apply.-->
+
+          <div class="form-group">
+            <p>What languages can you speak?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+              <input name="prefer" value="english" type="checkbox" class="input-checkbox">English
+            </label>
+            <label>
+              <input name="prefer" value="spanish" type="checkbox" class="input-checkbox">Spanish
+            </label>
+            <label>
+              <input name="prefer" value="mandarin" type="checkbox" class="input-checkbox">Mandarin
+            </label>
+            <label>
+              <input name="prefer" value="japanese" type="checkbox" class="input-checkbox">Japanese
+            </label>
+            <label>
+              <input name="prefer" value="german" type="checkbox" class="input-checkbox">German
+            </label>
+            <label>
+              <input name="prefer" value="russian" type="checkbox" class="input-checkbox">Russian
+            </label>
+          </div>
+          <!-- Creates textarea for the users to leave final comments or suggestions.-->
+          <div class="form-group">
+            <p>Anything else we should know?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+              placeholder="Enter your comment here..."></textarea>
+          </div>
+          <!-- Creates button for the user to submit the form.-->
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+      </form>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>

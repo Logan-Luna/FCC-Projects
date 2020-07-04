@@ -1,0 +1,168 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+body{
+  background-color:#f4f4f4;
+  overflow: auto;
+  font-family: lato;
+}
+.site {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 75px 50px 250px 425px 450px 75px;
+  grid-template-areas:
+    "header"
+    "title"
+    "form"
+    "section1"
+    "section2"
+    "section3"
+    "footer";
+}
+
+.header{
+  grid-area: header;
+  background:#333;
+  overflow:hidden;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.title {
+  text-align:center;
+  grid-area: title;
+}
+
+#form {
+  grid-area:form;
+  justify-self:center;
+}
+
+#header-img{
+  padding: 10px 0 0 10px;
+  height:45px;
+  width:150px;
+  position:fixed;
+}
+
+.section1 {
+  text-align:center;
+  grid-area: section1;
+  font-size:1.1em;
+}
+
+.section2 {
+  text-align:center;
+  grid-area: section2;
+}
+.section3 {
+  text-align:center;
+  grid-area: section3;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container {
+  background-color:#333;
+  width: 300px;
+  height: 400px;
+  margin:auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px #888888;
+}
+
+.footer {
+  grid-area: footer;
+  height: 75px;
+  background: #ddd;
+  text-align: right;
+}
+
+.container {
+  color:white;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px 30px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  height:100%;
+}
+
+#submit:hover {
+  background-color: #ddd;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+a:hover {
+  background-color: #aaa;
+  
+}
+
+footer {
+  overflow:hidden;
+}
+footer p {
+  padding-right: 10px;
+}
+
+#footer-bottom {
+  margin-top:-20px;
+}
+
+#footer-top {
+  margin-top:40px;
+}
+.button:hover {
+  background-color: #f44336;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    color:white;
+  }
+  
+  a {
+    color:white;
+  }
+  
+  .footer {
+    color:black;
+  }
+}
